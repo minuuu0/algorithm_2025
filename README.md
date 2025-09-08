@@ -23,3 +23,7 @@
 |16562. 친구비|[링크](./%EB%B0%B1%EC%A4%80/Gold/16562.%E2%80%85%EC%B9%9C%EA%B5%AC%EB%B9%84/README.md)|
 |1987. 알파벳|[링크](./%EB%B0%B1%EC%A4%80/Gold/1987.%E2%80%85%EC%95%8C%ED%8C%8C%EB%B2%B3/README.md)|
 |2668. 숫자고르기|[링크](./%EB%B0%B1%EC%A4%80/Gold/2668.%E2%80%85%EC%88%AB%EC%9E%90%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)|
+### 🚀 Silver
+| 문제번호 | 링크 |
+| ----- | ----- |
+|1463. 1로 만들기|[링크](./%EB%B0%B1%EC%A4%80/Silver/1463.%E2%80%851%EB%A1%9C%E2%80%85%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)|
