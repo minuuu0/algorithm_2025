@@ -9,6 +9,10 @@
 | ----- | ----- |
 |3282. 0／1 Knapsack|[링크](./SWEA/D3/3282.%E2%80%850%EF%BC%8F1%E2%80%85Knapsack/README.md)|
 |3307. 최장 증가 부분 수열|[링크](./SWEA/D3/3307.%E2%80%85%EC%B5%9C%EC%9E%A5%E2%80%85%EC%A6%9D%EA%B0%80%E2%80%85%EB%B6%80%EB%B6%84%E2%80%85%EC%88%98%EC%97%B4/README.md)|
+### 🚀 D4
+| 문제번호 | 링크 |
+| ----- | ----- |
+|5643. ［Professional］ 키 순서|[링크](./SWEA/D4/5643.%E2%80%85%EF%BC%BBProfessional%EF%BC%BD%E2%80%85%ED%82%A4%E2%80%85%EC%88%9C%EC%84%9C/README.md)|
 ### 🚀 Unrated
 | 문제번호 | 링크 |
 | ----- | ----- |
