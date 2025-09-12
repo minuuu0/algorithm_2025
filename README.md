@@ -10,6 +10,7 @@
 ### 🚀 D4
 | 문제번호 | 링크 |
 | ----- | ----- |
+|1494. 사랑의 카운슬러|[링크](./SWEA/D4/1494.%E2%80%85%EC%82%AC%EB%9E%91%EC%9D%98%E2%80%85%EC%B9%B4%EC%9A%B4%EC%8A%AC%EB%9F%AC/README.md)|
 |5643. ［Professional］ 키 순서|[링크](./SWEA/D4/5643.%E2%80%85%EF%BC%BBProfessional%EF%BC%BD%E2%80%85%ED%82%A4%E2%80%85%EC%88%9C%EC%84%9C/README.md)|
 ### 🚀 Unrated
 | 문제번호 | 링크 |
