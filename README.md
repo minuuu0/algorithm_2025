@@ -20,6 +20,10 @@
 |2383. ［모의 SW 역량테스트］ 점심 식사시간|[링크](./SWEA/Unrated/2383.%E2%80%85%EF%BC%BB%EB%AA%A8%EC%9D%98%E2%80%85SW%E2%80%85%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8%EF%BC%BD%E2%80%85%EC%A0%90%EC%8B%AC%E2%80%85%EC%8B%9D%EC%82%AC%EC%8B%9C%EA%B0%84/README.md)|
 |5648. ［모의 SW 역량테스트］ 원자 소멸 시뮬레이션|[링크](./SWEA/Unrated/5648.%E2%80%85%EF%BC%BB%EB%AA%A8%EC%9D%98%E2%80%85SW%E2%80%85%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8%EF%BC%BD%E2%80%85%EC%9B%90%EC%9E%90%E2%80%85%EC%86%8C%EB%A9%B8%E2%80%85%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/README.md)|
 ## 📚 백준
+### 🚀 Bronze
+| 문제번호 | 링크 |
+| ----- | ----- |
+|2846. 오르막길|[링크](./%EB%B0%B1%EC%A4%80/Bronze/2846.%E2%80%85%EC%98%A4%EB%A5%B4%EB%A7%89%EA%B8%B8/README.md)|
 ### 🚀 Gold
 | 문제번호 | 링크 |
 | ----- | ----- |
