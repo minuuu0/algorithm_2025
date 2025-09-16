@@ -1,60 +1,63 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.io.IOException;
 
 public class Main {
-    static int N;
-    static String S;
-    static long[][] dp; // dp[index][state]: 메모이제이션을 위한 DP 테이블
-    static final int MOD = 1_000_000_007;
+    private static final long MOD = 1_000_000_007L;
+
+    public static long power(long base, long exp) {
+        long res = 1L;
+        base %= MOD;
+        while (exp > 0) {
+            if (exp % 2 == 1) {
+                res = (res * base) % MOD;
+            }
+            base = (base * base) % MOD;
+            exp /= 2;
+        }
+        return res;
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        N = Integer.parseInt(br.readLine());
-        S = br.readLine();
 
-        // dp 테이블을 -1로 초기화하여 아직 계산되지 않은 상태임을 표시합니다.
-        dp = new long[N][5];
-        for (int i = 0; i < N; i++) {
-            Arrays.fill(dp[i], -1);
+        int n = Integer.parseInt(br.readLine());
+        String s = br.readLine();
+
+        // prefixW[i]: s의 첫 i개 문자 중 'W'의 개수
+        int[] prefixW = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            prefixW[i] = prefixW[i - 1] + (s.charAt(i - 1) == 'W' ? 1 : 0);
         }
 
-        long result = solve(0, 0);
-        System.out.println(result % 1000000007);
-    }
-
-    static long solve(int index, int state) {
-        if (index == N) {
-            // state가 4이면 'WHEE'가 완성
-            return state == 4 ? 1 : 0;
+        // suffixE[i]: s의 i번째 문자부터 끝까지 중 'E'의 개수
+        // 배열 크기를 n+2로 하여 suffixE[i+1] 접근 시 오류 방지
+        int[] suffixE = new int[n + 2];
+        for (int i = n; i >= 1; i--) {
+            suffixE[i] = suffixE[i + 1] + (s.charAt(i - 1) == 'E' ? 1 : 0);
         }
 
-        if (dp[index][state] != -1) {
-            return dp[index][state];
+        long ans = 0;
+        // 문자열을 순회하며 'H'를 찾음
+        for (int i = 1; i <= n; i++) {
+            if (s.charAt(i - 1) == 'H') {
+                // 현재 'H' 이전의 'W' 개수
+                long countW = prefixW[i];
+                // 현재 'H' 이후의 'E' 개수
+                long countE = suffixE[i];
+
+                // 'E'를 2개 이상 선택하는 경우의 수 계산
+                // (전체 부분집합 수) - (0개 선택) - (1개 선택)
+                long waysToChooseEs = (power(2, countE) - countE - 1);
+
+                waysToChooseEs = waysToChooseEs % MOD;
+                
+                // (W 개수) * (E를 2개 이상 고르는 경우의 수)
+                long term = (countW * waysToChooseEs) % MOD;
+                ans = (ans + term) % MOD;
+            }
         }
 
-        // 1. 현재 index의 문자를 사용하지 않는 경우(기본값)
-        long count = solve(index + 1, state);
-
-        // 2. 현재 index의 문자를 사용하는 경우
-        char currentChar = S.charAt(index);
-
-        if (state == 0 && currentChar == 'W') {
-            count = (count + solve(index + 1, 1)) % MOD; // 'W'를 찾았으니 다음엔 'H'(state=1)
-        } else if (state == 1 && currentChar == 'H') {
-            count = (count + solve(index + 1, 2)) % MOD; // 'H'를 찾았으니 다음엔 'E'(state=2)
-        } else if (state == 2 && currentChar == 'E') {
-            count = (count + solve(index + 1, 3)) % MOD; // 첫 'E'를 찾았으니 다음엔 두 번째 'E'(state=3)
-        } else if (state == 3 && currentChar == 'E') {
-            count = (count + solve(index + 1, 4)) % MOD; // 두 번째 'E'를 찾아 'WHEE'가 완성(state=4)
-        } else if (state == 4 && currentChar == 'E') {
-            // WHEE가 완성되어도 E추가되도됨
-            // 유효한 경우이니 state=4를 유지하며 경우의 수 추가
-            count = (count + solve(index + 1, 4)) % MOD;
-        }
-        
-        // 계산 결과를 DP 테이블에 저장하고 반환합니다.
-        return dp[index][state] = count;
+        System.out.println(ans);
     }
 }
