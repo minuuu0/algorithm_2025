@@ -8,6 +8,7 @@
 |3282. 0／1 Knapsack|[링크](./SWEA/D3/3282.%E2%80%850%EF%BC%8F1%E2%80%85Knapsack/README.md)|
 |3307. 최장 증가 부분 수열|[링크](./SWEA/D3/3307.%E2%80%85%EC%B5%9C%EC%9E%A5%E2%80%85%EC%A6%9D%EA%B0%80%E2%80%85%EB%B6%80%EB%B6%84%E2%80%85%EC%88%98%EC%97%B4/README.md)|
 |3499. 퍼펙트 셔플|[링크](./SWEA/D3/3499.%E2%80%85%ED%8D%BC%ED%8E%99%ED%8A%B8%E2%80%85%EC%85%94%ED%94%8C/README.md)|
+|5607. ［Professional］ 조합|[링크](./SWEA/D3/5607.%E2%80%85%EF%BC%BBProfessional%EF%BC%BD%E2%80%85%EC%A1%B0%ED%95%A9/README.md)|
 ### 🚀 D4
 | 문제번호 | 링크 |
 | ----- | ----- |
