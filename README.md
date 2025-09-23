@@ -25,6 +25,7 @@
 ### 🚀 Bronze
 | 문제번호 | 링크 |
 | ----- | ----- |
+|20299. 3대 측정|[링크](./%EB%B0%B1%EC%A4%80/Bronze/20299.%E2%80%853%EB%8C%80%E2%80%85%EC%B8%A1%EC%A0%95/README.md)|
 |2846. 오르막길|[링크](./%EB%B0%B1%EC%A4%80/Bronze/2846.%E2%80%85%EC%98%A4%EB%A5%B4%EB%A7%89%EA%B8%B8/README.md)|
 |2851. 슈퍼 마리오|[링크](./%EB%B0%B1%EC%A4%80/Bronze/2851.%E2%80%85%EC%8A%88%ED%8D%BC%E2%80%85%EB%A7%88%EB%A6%AC%EC%98%A4/README.md)|
 ### 🚀 Gold
