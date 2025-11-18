@@ -48,6 +48,7 @@
 |2533. 사회망 서비스（SNS）|[링크](./%EB%B0%B1%EC%A4%80/Gold/2533.%E2%80%85%EC%82%AC%ED%9A%8C%EB%A7%9D%E2%80%85%EC%84%9C%EB%B9%84%EC%8A%A4%EF%BC%88SNS%EF%BC%89/README.md)|
 |2565. 전깃줄|[링크](./%EB%B0%B1%EC%A4%80/Gold/2565.%E2%80%85%EC%A0%84%EA%B9%83%EC%A4%84/%EC%A0%84%EA%B9%83%EC%A4%84.java)|
 |2668. 숫자고르기|[링크](./%EB%B0%B1%EC%A4%80/Gold/2668.%E2%80%85%EC%88%AB%EC%9E%90%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)|
+|7576. 토마토|[링크](./%EB%B0%B1%EC%A4%80/Gold/7576.%E2%80%85%ED%86%A0%EB%A7%88%ED%86%A0/%ED%86%A0%EB%A7%88%ED%86%A0.java)|
 ### 🚀 Silver
 | 문제번호 | 링크 |
 | ----- | ----- |
